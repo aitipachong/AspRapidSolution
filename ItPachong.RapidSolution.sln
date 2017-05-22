@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Common", "1.Common", "{4ACF3922-1EA1-4FF0-AD7A-202503F448F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.DataAccess", "2.DataAccess", "{A2225859-5BC6-42C6-AC11-CAABB12CF4D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Logic", "3.Logic", "{6CA28FED-8F6B-49C1-8071-21F58AE25186}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.UI", "4.UI", "{CF9EAEB3-804D-48AB-A236-A439D20FA8D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItPachong.DoNet.Utilities", "ItPachong.DoNet.Utilities\ItPachong.DoNet.Utilities.csproj", "{755D1A9E-D520-4BC1-A994-26300630F163}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.UT", "5.UT", "{357B7918-4003-4DDE-8EBE-C541D8460FF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT_ItPachong.DoNet.Utilities", "UT_ItPachong.DoNet.Utilities\UT_ItPachong.DoNet.Utilities.csproj", "{AE53EB2E-AF94-4AD2-8174-EF5D0EA70854}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{755D1A9E-D520-4BC1-A994-26300630F163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{755D1A9E-D520-4BC1-A994-26300630F163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{755D1A9E-D520-4BC1-A994-26300630F163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{755D1A9E-D520-4BC1-A994-26300630F163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE53EB2E-AF94-4AD2-8174-EF5D0EA70854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE53EB2E-AF94-4AD2-8174-EF5D0EA70854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE53EB2E-AF94-4AD2-8174-EF5D0EA70854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE53EB2E-AF94-4AD2-8174-EF5D0EA70854}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{755D1A9E-D520-4BC1-A994-26300630F163} = {4ACF3922-1EA1-4FF0-AD7A-202503F448F3}
+		{AE53EB2E-AF94-4AD2-8174-EF5D0EA70854} = {357B7918-4003-4DDE-8EBE-C541D8460FF1}
+	EndGlobalSection
+EndGlobal

@@ -397,7 +397,9 @@ namespace ItPachong.DoNet.Utilities.DataBase.Operate
         #region 筛选函数，将数据表中指定的值找出来
 
         public DataTable GetFilterData(DataTable dt, string strField, string findValue, string sortField, string orderBy = "ASC")
-        { }
+        {
+            return null;
+        }
 
         #endregion
     }

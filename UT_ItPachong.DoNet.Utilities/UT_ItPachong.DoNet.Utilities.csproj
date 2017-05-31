@@ -57,6 +57,7 @@
     <Compile Include="BarCode\UT_BarCodeToHTML.cs" />
     <Compile Include="CSV\UT_CsvHelper.cs" />
     <Compile Include="DataBase\Operate\UT_DataTableHelper.cs" />
+    <Compile Include="Date\UT_ChinaDate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +66,7 @@
       <Name>ItPachong.DoNet.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

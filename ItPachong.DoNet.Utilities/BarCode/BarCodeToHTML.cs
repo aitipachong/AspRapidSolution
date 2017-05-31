@@ -170,9 +170,9 @@ namespace ItPachong.DoNet.Utilities.BarCode
         public static string GetEAN13(string s, int width, int height)
         {
             int checkcode_input = -1;//输入的校验码
-            if (!Regex.IsMatch(s, @"^\d{12}$"))
+            if (!System.Text.RegularExpressions.Regex.IsMatch(s, @"^\d{12}$"))
             {
-                if (!Regex.IsMatch(s, @"^\d{13}$"))
+                if (!System.Text.RegularExpressions.Regex.IsMatch(s, @"^\d{13}$"))
                 {
                     return "存在不允许的字符！";
                 }

@@ -154,7 +154,7 @@ namespace ItPachong.DoNet.Utilities.String
         /// <returns></returns>
         public static string ReplaceString(string SourceString, string SearchString, string ReplaceString, bool IsCaseInse)
         {
-            return Regex.Replace(SourceString, Regex.Escape(SearchString), ReplaceString, IsCaseInse ? RegexOptions.IgnoreCase : RegexOptions.None);
+            return System.Text.RegularExpressions.Regex.Replace(SourceString, System.Text.RegularExpressions.Regex.Escape(SearchString), ReplaceString, IsCaseInse ? RegexOptions.IgnoreCase : RegexOptions.None);
         }
 
         #region 删除最后一个字符之后的字符
@@ -399,7 +399,7 @@ namespace ItPachong.DoNet.Utilities.String
                 return new string[0] { };
             }
 
-            string[] strArray = new Regex(splitstr).Split(str);
+            string[] strArray = new System.Text.RegularExpressions.Regex(splitstr).Split(str);
 
             return strArray;
         }
@@ -442,7 +442,7 @@ namespace ItPachong.DoNet.Utilities.String
         public static bool QuickValidate(string _express, string _value)
         {
             if (_value == null) return false;
-            Regex myRegex = new Regex(_express);
+            System.Text.RegularExpressions.Regex myRegex = new System.Text.RegularExpressions.Regex(_express);
             if (_value.Length == 0)
             {
                 return false;
@@ -613,7 +613,7 @@ namespace ItPachong.DoNet.Utilities.String
             string strOutput = strHtml;
             for (int i = 0; i < aryReg.Length; i++)
             {
-                Regex regex = new Regex(aryReg[i], RegexOptions.IgnoreCase);
+                System.Text.RegularExpressions.Regex regex = new System.Text.RegularExpressions.Regex(aryReg[i], RegexOptions.IgnoreCase);
                 strOutput = regex.Replace(strOutput, string.Empty);
             }
 
@@ -837,7 +837,7 @@ namespace ItPachong.DoNet.Utilities.String
         public static bool IsEmail(string str)
         {
             if (string.IsNullOrEmpty(str)) { return false; }
-            return Regex.IsMatch(str, @"^([a-zA-Z0-9_.-]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
+            return System.Text.RegularExpressions.Regex.IsMatch(str, @"^([a-zA-Z0-9_.-]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
         }
 
         /// <summary>检查输入,是否由字母组成</summary>
@@ -896,7 +896,7 @@ namespace ItPachong.DoNet.Utilities.String
 
             string s = @"^(13[0-9]|15[012356789]|18[012356789]|14[57])\d{8}$";
 
-            return Regex.IsMatch(str, s);
+            return System.Text.RegularExpressions.Regex.IsMatch(str, s);
         }
 
         /// <summary>判断输入是否为Base64编码.</summary>

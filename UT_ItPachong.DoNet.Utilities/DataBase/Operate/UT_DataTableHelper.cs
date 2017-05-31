@@ -201,14 +201,14 @@ namespace UT_ItPachong.DoNet.Utilities.DataBase.Operate
             {
                 DataTable table = this.CreateTestDataTable();
                 ItPachong.DoNet.Utilities.DataBase.Operate.DataTableHelper<Emptemployee> helper = new DataTableHelper<Emptemployee>();
-                DataRow result = helper.Select(table, "赖强", "Name");
+                List<object> result = helper.Select(table, "赖强", "Name");
                 if (result == null)
                 {
                     Assert.Fail("查询失败");
                 }
                 else
                 {
-                    Assert.AreEqual(1, int.Parse(result["Id"].ToString()));
+                    Assert.AreEqual(1, result.Count);
                 }
             }
             catch (Exception ex)

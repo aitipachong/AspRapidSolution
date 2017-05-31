@@ -104,11 +104,21 @@
     <Compile Include="DataBase\Operate\DataTableHelper.cs" />
     <Compile Include="DataBase\OracleHelper.cs" />
     <Compile Include="DataBase\SQLHelper.cs" />
+    <Compile Include="Date\CNDate.cs" />
+    <Compile Include="DEncrypt\DEncrypt.cs" />
+    <Compile Include="DEncrypt\DESEncrypt.cs" />
+    <Compile Include="DEncrypt\Encrypt.cs" />
+    <Compile Include="DEncrypt\HashEncode.cs" />
+    <Compile Include="DEncrypt\MySecurity.cs" />
+    <Compile Include="DEncrypt\RSACryption.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regex\RegexHelper.cs" />
     <Compile Include="String\StringHelper.cs" />
+    <Compile Include="Validate_Tools\Tools.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="DEncrypt\常用数据加密和解密方法汇总.docx" />
     <None Include="ItPachong.DoNet.Utilites详细说明文档.xlsx" />
     <None Include="packages.config" />
   </ItemGroup>

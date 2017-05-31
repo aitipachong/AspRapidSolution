@@ -121,6 +121,12 @@ namespace ItPachong.DoNet.Utilities.DataBase
             }
         }
 
+        /// <summary>
+        /// 在规定时间范围内执行SQL语句，返回影响的记录数
+        /// </summary>
+        /// <param name="SQLString"></param>
+        /// <param name="Times"></param>
+        /// <returns></returns>
         public static int ExecuteSqlByTime(string SQLString, int Times)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))

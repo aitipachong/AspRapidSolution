@@ -174,7 +174,7 @@ namespace ItPachong.DoNet.Utilities.Convert
             }
             else
             {
-                return (new Regex("^[\\+\\-]?[0-9]*\\.?[0-9]+$")).IsMatch(str);
+                return (new System.Text.RegularExpressions.Regex("^[\\+\\-]?[0-9]*\\.?[0-9]+$")).IsMatch(str);
             }
         }
 
@@ -287,7 +287,7 @@ namespace ItPachong.DoNet.Utilities.Convert
             }
             else
             {
-                return (new Regex("^[0-9]*\\.?[0-9]+$")).IsMatch(str);
+                return (new System.Text.RegularExpressions.Regex("^[0-9]*\\.?[0-9]+$")).IsMatch(str);
             }
         }
 

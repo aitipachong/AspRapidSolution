@@ -333,7 +333,7 @@ namespace ItPachong.DoNet.Utilities.Convert
             string[] strArray = null;
             if((str != null) && (str != ""))
             {
-                strArray = new Regex(splitStr).Split(str);
+                strArray = new System.Text.RegularExpressions.Regex(splitStr).Split(str);
             }
             return strArray;
         }
@@ -389,7 +389,7 @@ namespace ItPachong.DoNet.Utilities.Convert
         public static bool QuickValidate(string _express, string _value)
         {
             if (_value == null) return false;
-            Regex myRegex = new Regex(_express);
+            System.Text.RegularExpressions.Regex myRegex = new System.Text.RegularExpressions.Regex(_express);
             if(_value.Length == 0)
             {
                 return false;

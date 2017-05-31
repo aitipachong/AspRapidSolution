@@ -5,7 +5,6 @@ E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\EntityFramework.SqlServer.dll
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\EntityFramework.xml
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\EntityFramework.SqlServer.xml
-E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\obj\Debug\ItPachong.DoNet.Utilities.csprojResolveAssemblyReference.cache
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\obj\Debug\ItPachong.DoNet.Utilities.dll
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\obj\Debug\ItPachong.DoNet.Utilities.pdb
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\MySql.Data.dll
@@ -13,3 +12,4 @@ E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\System.Data.SQLite.EF6.dll
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\System.Data.SQLite.Linq.dll
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\System.Data.SQLite.xml
+E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\obj\Debug\ItPachong.DoNet.Utilities.csprojResolveAssemblyReference.cache

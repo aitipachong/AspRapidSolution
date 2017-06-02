@@ -111,6 +111,8 @@
     <Compile Include="DEncrypt\HashEncode.cs" />
     <Compile Include="DEncrypt\MySecurity.cs" />
     <Compile Include="DEncrypt\RSACryption.cs" />
+    <Compile Include="Download_Up\DownloadHelper.cs" />
+    <Compile Include="Download_Up\UploadHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Regex\RegexHelper.cs" />
     <Compile Include="String\StringHelper.cs" />

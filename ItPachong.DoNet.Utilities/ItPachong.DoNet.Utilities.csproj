@@ -113,6 +113,8 @@
     <Compile Include="DEncrypt\RSACryption.cs" />
     <Compile Include="Download_Up\DownloadHelper.cs" />
     <Compile Include="Download_Up\UploadHelper.cs" />
+    <Compile Include="Excel\ExcelHelper.cs" />
+    <Compile Include="Excel\WebExportExcel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Regex\RegexHelper.cs" />
     <Compile Include="String\StringHelper.cs" />

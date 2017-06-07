@@ -12,4 +12,5 @@ E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\System.Data.SQLite.EF6.dll
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\System.Data.SQLite.Linq.dll
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\System.Data.SQLite.xml
-E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\obj\Debug\ItPachong.DoNet.Utilities.csprojResolveAssemblyReference.cache
+E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\ItPachong.DoNet.Utilities.dll.CodeAnalysisLog.xml
+E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\ItPachong.DoNet.Utilities.dll.lastcodeanalysissucceeded

@@ -193,7 +193,7 @@ namespace ItPachong.DoNet.Utilities.Validate_Tools
         /// <returns>间隔日期之间的 随机日期</returns>
         public static DateTime GetRandomTime(DateTime time1, DateTime time2)
         {
-            Random random = new Random();
+            System.Random random = new System.Random();
             DateTime minTime = new DateTime();
             DateTime maxTime = new DateTime();
 

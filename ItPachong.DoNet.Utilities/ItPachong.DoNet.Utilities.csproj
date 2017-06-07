@@ -115,7 +115,11 @@
     <Compile Include="Download_Up\UploadHelper.cs" />
     <Compile Include="Excel\ExcelHelper.cs" />
     <Compile Include="Excel\WebExportExcel.cs" />
+    <Compile Include="File\DirFileHelper.cs" />
+    <Compile Include="File\FileOperateHelper.cs" />
+    <Compile Include="File\INIFileHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Random\RandomHelper.cs" />
     <Compile Include="Regex\RegexHelper.cs" />
     <Compile Include="String\StringHelper.cs" />
     <Compile Include="Validate_Tools\Tools.cs" />

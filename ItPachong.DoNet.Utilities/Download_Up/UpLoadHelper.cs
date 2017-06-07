@@ -35,12 +35,12 @@ namespace ItPachong.DoNet.Utilities.Download_Up
         /// <returns></returns>
         private byte[] GetBinaryFile(string fileName)
         {
-            if(File.Exists(fileName))
+            if(System.IO.File.Exists(fileName))
             {
                 FileStream fs = null;
                 try
                 {
-                    fs = File.OpenRead(fileName);
+                    fs = System.IO.File.OpenRead(fileName);
                     return this.ConvertStreamToByteBuffer(fs);
                 }
                 catch
@@ -250,7 +250,7 @@ namespace ItPachong.DoNet.Utilities.Download_Up
             fileSize = 0;
 
             string Result = "";
-            bool typeFlag = false;
+            //bool typeFlag = false;
             string FilePath = filePath;
             int MaxSize = maxSize;
             string strFileName, strNewName, strFilePath;

@@ -10,3 +10,5 @@ E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\UT_ItPachong.DoNet.Utilities\bin\Debug\EntityFramework.xml
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\UT_ItPachong.DoNet.Utilities\obj\Debug\UT_ItPachong.DoNet.Utilities.dll
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\UT_ItPachong.DoNet.Utilities\obj\Debug\UT_ItPachong.DoNet.Utilities.pdb
+E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\UT_ItPachong.DoNet.Utilities\bin\Debug\UT_ItPachong.DoNet.Utilities.dll.CodeAnalysisLog.xml
+E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\UT_ItPachong.DoNet.Utilities\bin\Debug\UT_ItPachong.DoNet.Utilities.dll.lastcodeanalysissucceeded

@@ -134,7 +134,7 @@ namespace ItPachong.DoNet.Utilities.Download_Up
         {
             if (string.IsNullOrEmpty(fileName)) return;
             string destFileName = MapPathFile(fileName);
-            if(File.Exists(destFileName))
+            if(System.IO.File.Exists(destFileName))
             {
                 FileInfo fi = new FileInfo(destFileName);
                 HttpContext.Current.Response.Clear();
@@ -165,7 +165,7 @@ namespace ItPachong.DoNet.Utilities.Download_Up
 
             try
             {
-                if (!File.Exists(filePath)) return;
+                if (!System.IO.File.Exists(filePath)) return;
                 //打开文件
                 stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read);      //读取文件到文件流
                 dataToRead = stream.Length;

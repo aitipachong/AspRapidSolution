@@ -45,7 +45,7 @@ namespace ItPachong.DoNet.Utilities.DEncrypt
         /// <returns></returns>
         private static string GetRandomValue()
         {
-            Random seed = new Random();
+            System.Random seed = new System.Random();
             string randomValue = seed.Next(1, int.MaxValue).ToString();
             return randomValue;
         }

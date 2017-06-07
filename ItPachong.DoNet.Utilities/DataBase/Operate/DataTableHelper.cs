@@ -200,18 +200,18 @@ namespace ItPachong.DoNet.Utilities.DataBase.Operate
         /// </summary>
         /// <param name="dt"></param>
         /// <returns></returns>
-        public IList<T> ToList<T>(DataTable dt) where T : new()
+        public IList<I> ToList<I>(DataTable dt) where I : new()
         {
             if (dt == null || dt.Rows.Count <= 0)
                 return null;
 
             //定义集合
-            var list = new List<T>();
+            var list = new List<I>();
 
             //建立实体模型
             foreach(DataRow dr in dt.Rows)
             {
-                var t = new T();
+                var t = new I();
                 var properties = t.GetType().GetProperties();
                 foreach(var pi in properties)
                 {

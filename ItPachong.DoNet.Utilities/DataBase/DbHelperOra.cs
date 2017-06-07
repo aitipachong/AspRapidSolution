@@ -91,9 +91,17 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <returns>影响的记录数</returns>
         public static int ExecuteSql(string SQLString)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             using (OracleConnection connection = new OracleConnection(connectionString))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
                 using (OracleCommand cmd = new OracleCommand(SQLString, connection))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
                 {
                     try
                     {
@@ -116,10 +124,18 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <param name="SQLStringList">多条SQL语句</param>		
         public static void ExecuteSqlTran(ArrayList SQLStringList)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             using (OracleConnection conn = new OracleConnection(connectionString))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             {
                 conn.Open();
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
                 OracleCommand cmd = new OracleCommand();
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
                 cmd.Connection = conn;
                 OracleTransaction tx = conn.BeginTransaction();
                 cmd.Transaction = tx;
@@ -151,9 +167,17 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <returns>影响的记录数</returns>
         public static int ExecuteSql(string SQLString, string content)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             using (OracleConnection connection = new OracleConnection(connectionString))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
                 OracleCommand cmd = new OracleCommand(SQLString, connection);
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
                 System.Data.OracleClient.OracleParameter myParameter = new System.Data.OracleClient.OracleParameter("@content", OracleType.NVarChar);
                 myParameter.Value = content;
                 cmd.Parameters.Add(myParameter);
@@ -182,9 +206,17 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <returns>影响的记录数</returns>
         public static int ExecuteSqlInsertImg(string strSQL, byte[] fs)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             using (OracleConnection connection = new OracleConnection(connectionString))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
                 OracleCommand cmd = new OracleCommand(strSQL, connection);
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
                 System.Data.OracleClient.OracleParameter myParameter = new System.Data.OracleClient.OracleParameter("@fs", OracleType.LongRaw);
                 myParameter.Value = fs;
                 cmd.Parameters.Add(myParameter);
@@ -213,9 +245,17 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <returns>查询结果（object）</returns>
         public static object GetSingle(string SQLString)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             using (OracleConnection connection = new OracleConnection(connectionString))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
                 using (OracleCommand cmd = new OracleCommand(SQLString, connection))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
                 {
                     try
                     {
@@ -245,8 +285,16 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <returns>OracleDataReader</returns>
         public static OracleDataReader ExecuteReader(string strSQL)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             OracleConnection connection = new OracleConnection(connectionString);
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             OracleCommand cmd = new OracleCommand(strSQL, connection);
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             try
             {
                 connection.Open();
@@ -266,13 +314,21 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <returns>DataSet</returns>
         public static DataSet Query(string SQLString)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             using (OracleConnection connection = new OracleConnection(connectionString))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             {
                 DataSet ds = new DataSet();
                 try
                 {
                     connection.Open();
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
                     OracleDataAdapter command = new OracleDataAdapter(SQLString, connection);
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
                     command.Fill(ds, "ds");
                 }
                 catch (System.Data.OracleClient.OracleException ex)
@@ -295,9 +351,17 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <returns>影响的记录数</returns>
         public static int ExecuteSql(string SQLString, params OracleParameter[] cmdParms)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             using (OracleConnection connection = new OracleConnection(connectionString))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
                 using (OracleCommand cmd = new OracleCommand())
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
                 {
                     try
                     {
@@ -321,12 +385,20 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <param name="SQLStringList">SQL语句的哈希表（key为sql语句，value是该语句的OracleParameter[]）</param>
         public static void ExecuteSqlTran(Hashtable SQLStringList)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             using (OracleConnection conn = new OracleConnection(connectionString))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             {
                 conn.Open();
                 using (OracleTransaction trans = conn.BeginTransaction())
                 {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
                     OracleCommand cmd = new OracleCommand();
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
                     try
                     {
                         //循环
@@ -358,9 +430,17 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <returns>查询结果（object）</returns>
         public static object GetSingle(string SQLString, params OracleParameter[] cmdParms)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             using (OracleConnection connection = new OracleConnection(connectionString))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
                 using (OracleCommand cmd = new OracleCommand())
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
                 {
                     try
                     {
@@ -391,8 +471,16 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <returns>OracleDataReader</returns>
         public static OracleDataReader ExecuteReader(string SQLString, params OracleParameter[] cmdParms)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             OracleConnection connection = new OracleConnection(connectionString);
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             OracleCommand cmd = new OracleCommand();
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             try
             {
                 PrepareCommand(cmd, connection, null, SQLString, cmdParms);
@@ -414,11 +502,23 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <returns>DataSet</returns>
         public static DataSet Query(string SQLString, params OracleParameter[] cmdParms)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             using (OracleConnection connection = new OracleConnection(connectionString))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
                 OracleCommand cmd = new OracleCommand();
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
                 PrepareCommand(cmd, connection, null, SQLString, cmdParms);
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
                 using (OracleDataAdapter da = new OracleDataAdapter(cmd))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
                 {
                     DataSet ds = new DataSet();
                     try
@@ -436,7 +536,11 @@ namespace ItPachong.DoNet.Utilities.DataBase
         }
 
 
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
         private static void PrepareCommand(OracleCommand cmd, OracleConnection conn, OracleTransaction trans, string cmdText, OracleParameter[] cmdParms)
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
         {
             if (conn.State != ConnectionState.Open)
                 conn.Open();
@@ -464,10 +568,16 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <returns>OracleDataReader</returns>
         public static OracleDataReader RunProcedure(string storedProcName, IDataParameter[] parameters)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             OracleConnection connection = new OracleConnection(connectionString);
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             OracleDataReader returnReader;
             connection.Open();
+#pragma warning disable CS0618 // 类型或成员已过时
             OracleCommand command = BuildQueryCommand(connection, storedProcName, parameters);
+#pragma warning restore CS0618 // 类型或成员已过时
             command.CommandType = CommandType.StoredProcedure;
             returnReader = command.ExecuteReader(CommandBehavior.CloseConnection);
             return returnReader;
@@ -483,11 +593,19 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <returns>DataSet</returns>
         public static DataSet RunProcedure(string storedProcName, IDataParameter[] parameters, string tableName)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             using (OracleConnection connection = new OracleConnection(connectionString))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             {
                 DataSet dataSet = new DataSet();
                 connection.Open();
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
                 OracleDataAdapter sqlDA = new OracleDataAdapter();
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
                 sqlDA.SelectCommand = BuildQueryCommand(connection, storedProcName, parameters);
                 sqlDA.Fill(dataSet, tableName);
                 connection.Close();
@@ -496,6 +614,8 @@ namespace ItPachong.DoNet.Utilities.DataBase
         }
 
 
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
         /// <summary>
         /// 构建 OracleCommand 对象(用来返回一个结果集，而不是一个整数值)
         /// </summary>
@@ -504,8 +624,14 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <param name="parameters">存储过程参数</param>
         /// <returns>OracleCommand</returns>
         private static OracleCommand BuildQueryCommand(OracleConnection connection, string storedProcName, IDataParameter[] parameters)
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             OracleCommand command = new OracleCommand(storedProcName, connection);
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             command.CommandType = CommandType.StoredProcedure;
             foreach (OracleParameter parameter in parameters)
             {
@@ -523,11 +649,17 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <returns></returns>
         public static int RunProcedure(string storedProcName, IDataParameter[] parameters, out int rowsAffected)
         {
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
             using (OracleConnection connection = new OracleConnection(connectionString))
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
             {
                 int result;
                 connection.Open();
+#pragma warning disable CS0618 // 类型或成员已过时
                 OracleCommand command = BuildIntCommand(connection, storedProcName, parameters);
+#pragma warning restore CS0618 // 类型或成员已过时
                 rowsAffected = command.ExecuteNonQuery();
                 result = (int)command.Parameters["ReturnValue"].Value;
                 //Connection.Close();
@@ -535,6 +667,8 @@ namespace ItPachong.DoNet.Utilities.DataBase
             }
         }
 
+#pragma warning disable CS0618 // 类型或成员已过时
+#pragma warning disable CS0618 // 类型或成员已过时
         /// <summary>
         /// 创建 OracleCommand 对象实例(用来返回一个整数值)	
         /// </summary>
@@ -542,8 +676,12 @@ namespace ItPachong.DoNet.Utilities.DataBase
         /// <param name="parameters">存储过程参数</param>
         /// <returns>OracleCommand 对象实例</returns>
         private static OracleCommand BuildIntCommand(OracleConnection connection, string storedProcName, IDataParameter[] parameters)
+#pragma warning restore CS0618 // 类型或成员已过时
+#pragma warning restore CS0618 // 类型或成员已过时
         {
+#pragma warning disable CS0618 // 类型或成员已过时
             OracleCommand command = BuildQueryCommand(connection, storedProcName, parameters);
+#pragma warning restore CS0618 // 类型或成员已过时
             command.Parameters.Add(new OracleParameter("ReturnValue",
                 OracleType.Int32, 4, ParameterDirection.ReturnValue,
                 false, 0, 0, string.Empty, DataRowVersion.Default, null));

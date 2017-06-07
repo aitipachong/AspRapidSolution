@@ -91,7 +91,7 @@ namespace ItPachong.DoNet.Utilities.Excel
         public string GetExcelConnectionString(string excelPath, bool header, ExcelType eType, IMEXType imex)
         {
             if (string.IsNullOrEmpty(excelPath)) throw new ArgumentNullException("Excel路径字符串为空");
-            if (!File.Exists(excelPath)) throw new FileNotFoundException(string.Format("Excel文件不存在，路径为：{0}", excelPath));
+            if (!System.IO.File.Exists(excelPath)) throw new FileNotFoundException(string.Format("Excel文件不存在，路径为：{0}", excelPath));
 
             string connectionString = "";
             string hdr = "NO";
@@ -486,11 +486,11 @@ namespace ItPachong.DoNet.Utilities.Excel
         /// <param name="eType">导出Excel格式类型</param>
         public void DataTable2Excel(DataTable dataTable, string fileName, ExcelType eType)
         {
-            if(File.Exists(fileName))
+            if(System.IO.File.Exists(fileName))
             {
                 try
                 {
-                    File.Delete(fileName);
+                    System.IO.File.Delete(fileName);
                 }
                 catch
                 {

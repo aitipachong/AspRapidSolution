@@ -64,7 +64,7 @@ namespace ItPachong.DoNet.Utilities.Excel
         /// 将GridView数据导出到Excel（保存为2003格式）
         /// </summary>
         /// <param name="obj"></param>
-        public void GridViewExportToExcel(GridView obj)
+        public void GridViewExportToExcel(System.Web.UI.WebControls.GridView obj)
         {
             try
             {

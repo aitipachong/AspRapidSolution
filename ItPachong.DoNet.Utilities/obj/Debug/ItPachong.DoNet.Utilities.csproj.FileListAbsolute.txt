@@ -12,5 +12,10 @@ E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\System.Data.SQLite.EF6.dll
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\System.Data.SQLite.Linq.dll
 E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\System.Data.SQLite.xml
-E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\ItPachong.DoNet.Utilities.dll.CodeAnalysisLog.xml
-E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\ItPachong.DoNet.Utilities.dll.lastcodeanalysissucceeded
+E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\FineUI.dll
+E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\log4net.dll
+E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\Newtonsoft.Json.dll
+E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\FineUI.xml
+E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\log4net.xml
+E:\STUDY\NET_STUDY\DevelopmentFramework\AspRapidSolution\ItPachong.RapidSolution\ItPachong.DoNet.Utilities\bin\Debug\Newtonsoft.Json.xml

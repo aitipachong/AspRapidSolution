@@ -63,9 +63,9 @@ namespace ItPachong.DoNet.Utilities.Control
         /// <param name="mydv">数据视图</param>
         public static void BindGridView(System.Web.UI.Control ctrl, DataView mydv)
         {
-            ((GridView)ctrl).DataSourceID = null;
-            ((GridView)ctrl).DataSource = mydv;
-            ((GridView)ctrl).DataBind();
+            ((System.Web.UI.WebControls.GridView)ctrl).DataSourceID = null;
+            ((System.Web.UI.WebControls.GridView)ctrl).DataSource = mydv;
+            ((System.Web.UI.WebControls.GridView)ctrl).DataBind();
         }
         #endregion
 
